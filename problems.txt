@@ -1,0 +1,32 @@
+Problem 1
+=========
+
+Given the following function signature:
+
+    CREATE FUNCTION New_User(_Username text) RETURNS integer
+
+Write a PL/PgSQL function which adds a new user into the Users table and
+returns the UserID of the newly created user.  Assume the argument is input
+directly from the user, and show a nice error message in the most common error
+conditions.
+
+
+Problem 2
+=========
+
+Given the following function signature:
+
+    CREATE FUNCTION New_Deposit(_Username text, _Recipient text, _Amount numeric) RETURNS integer
+
+Write a PL/PgSQL function to carry out a deposit of _Amount from _Username to
+_Recipient.  Assume _Recipient and _Amount are input directly from the user,
+and show a nice error message in the most common error conditions.  Keep
+Users.NetWorth up to date, and don't allow overdrafts.  The necessary amount
+must pre-exist on a single account owned by _Username.  If the user has
+sufficient funds on multiple accounts, it does not matter which account the
+money is taken from.  The return value should be the BankDepositID of the
+deposit.
+
+For testing, you can have user 'Richie' send money to 'Gloria'.
+
+
