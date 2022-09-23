@@ -1,0 +1,10 @@
+postgres=# \cd /Users/anu/Projects/TrustlyCodingTest3/
+postgres=# \i install.sql
+postgres=# \i problem1.sql
+postgres=# \df
+postgres=# SELECT new_user('Test User');
+postgres=# SELECT new_user('Test User');
+postgres=# \i problem2.sql
+postgres=# SELECT new_deposit('Richie', 'Gloria', 1500);
+postgres=# SELECT new_deposit('Mayda', 'Gloria', 1500);
+postgres=# SELECT new_deposit('Richie', 'Freckles', 1500);
